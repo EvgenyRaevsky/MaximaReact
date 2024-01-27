@@ -13,24 +13,24 @@
     gap: 20px;
 }
 
-.layout_main>h1 {
+.layout.layout_main>h1 {
     width: 40%;
     font-size: 3.6rem;
     font-weight: 800;
     color: #2F2A37;
 }
 
-.layout_main>p{
+.layout.layout_main>p{
     width: 40%;
     font-size: 1.4rem;
     color: #6E6C72;
 }
 
-.layout_main .btn{
+.layout.layout_main .btn{
     margin-top: 40px;
 }
 
-.layout_main::before {
+.layout.layout_main::before {
     content: '';
     position: absolute;
     margin-right: 10%;
@@ -45,7 +45,7 @@
     background-position: center;
 }
 
-.layout_main::after {
+.layout.layout_main::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -58,44 +58,44 @@
     filter: blur(120px);
 }
 
-.layout_suitable,
-.layout_choise {
+.layout.layout_suitable,
+.layout.layout_choise {
     background-color: #242029;
     color: #F3F6EF;
 }
 
-.layout_suitable>h2 {
+.layout.layout_suitable>h2 {
     font-size: 2.85rem;
     color: #F3F6EF;
     font-weight: 800;
     margin-bottom: 58px;
 }
 
-.layout_suitable .layout__content {
+.layout.layout_suitable .layout__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
 }
 
-.layout_suitable .layout__content>div {
+.layout.layout_suitable .layout__content>div {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.layout_suitable .layout__content>div>div {
+.layout.layout_suitable .layout__content>div>div {
     display: grid;
     gap: 20px;
 }
 
-.layout_card>h2 {
+.layout.layout_card>h2 {
     text-align: center;
     font-weight: 800;
     font-size: 2.85rem;
     color: #2F2A37;
 }
 
-.layout_card>p {
+.layout.layout_card>p {
     text-align: center;
     font-weight: 400;
     font-size: 1.4rem;
@@ -103,8 +103,8 @@
     margin-bottom: 35px;
 }
 
-.layout_card::before,
-.layout_card::after {
+.layout.layout_card::before,
+.layout.layout_card::after {
     content: '';
     position: absolute;
     width: 60vw;
@@ -113,7 +113,7 @@
     z-index: -1;
 }
 
-.layout_card::before {
+.layout.layout.layout_card::before {
     top: -70%;
     left: -50%;
     transform: translate(50%, 50%);
@@ -121,7 +121,7 @@
     filter: blur(206px);
 }
 
-.layout_card::after {
+.layout.layout_card::after {
     top: 60%;
     left: 90%;
     transform: translate(-50%, -50%);
@@ -129,45 +129,45 @@
     filter: blur(180px);
 }
 
-.layout_card .layout__content {
+.layout.layout_card .layout__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.layout_card .layout__content>div {
+.layout.layout_card .layout__content>div {
     display: grid;
     gap: 20px;
     border-radius: 10px;
     align-content: flex-start;
-    background: linear-gradient(139deg, #FFF -21.71%, rgba(243, 246, 239, 0.00) 94.44%);
+    background-image: linear-gradient(139deg, #FFF -21.71%, rgba(243, 246, 239, 0.00) 94.44%);
     box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.04);
     backdrop-filter: blur(5px);
     padding: 40px;
 }
 
-.layout_card .layout__content>div>div {
+.layout.layout_card .layout__content>div>div {
     display: grid;
     gap: 20px;
 }
 
-.layout_card .layout__content>div>div h3 {
+.layout.layout_card .layout__content>div>div h3 {
     font-weight: 500;
     font-size: 1.7rem;
     color: #2F2A37;
 }
 
-.layout_card .layout__content>div>div p {
+.layout.layout_card .layout__content>div>div p {
     font-weight: 500;
     font-size: 1rem;
     color: #2F2A37;
 }
 
-.layout_suitable .btn,
-.layout_card .btn {
+.layout.layout_suitable .btn,
+.layout.layout_card .btn {
     margin: 90px auto 0;
 }
 
-.layout_choise>h2 {
+.layout.layout_choise>h2 {
     font-size: 2.85rem;
     font-weight: 800;
     margin-bottom: 15px;
@@ -191,16 +191,16 @@
     padding: 10px 22px;
     border-radius: 84px;
     color: #2F2A37;
-    background: linear-gradient(180deg, #FFF -13.5%, rgba(243, 246, 239, 0.00) 187.91%);
+    background-image: linear-gradient(180deg, #FFF -13.5%, rgba(243, 246, 239, 0.00) 187.91%);
     box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.34);
     backdrop-filter: blur(5px);
 }
 
-.layout_choise>div:last-child {
+.layout.layout_choise>div:last-child {
     position: relative;
 }
 
-.layout_choise>div:last-child::after {
+.layout.layout_choise>div:last-child::after {
     content: '';
     position: absolute;
     right: 0;
@@ -213,8 +213,8 @@
     background-size: 80%;
 }
 
-.layout_choise>div:last-child h2,
-.layout_choise .layout__content>div:nth-child(2) h3 {
+.layout.layout_choise>div:last-child h2,
+.layout.layout_choise .layout__content>div:nth-child(2) h3 {
     width: 40%;
     font-size: 2.85rem;
     font-weight: 800;
@@ -222,12 +222,12 @@
     margin: 50px 0 40px;
 }
 
-.layout_choise .layout__content>div:nth-child(2) h3 {
+.layout.layout_choise .layout__content>div:nth-child(2) h3 {
     width: 75%;
 }
 
-.layout_choise>div:last-child h3,
-.layout_choise .layout__content>div:nth-child(3) h3 {
+.layout.layout_choise>div:last-child h3,
+.layout.layout_choise .layout__content>div:nth-child(3) h3 {
     width: 40%;
     font-size: 1.7rem;
     font-weight: 800;
@@ -235,17 +235,21 @@
     color: #6BFFCA;
 }
 
-.layout_choise .layout__content>div:nth-child(3) h3 {
+.layout.layout_choise .layout__content>div:nth-child(3) h3 {
     width: 75%;
     font-size: 2.15rem;
 }
 
-.layout_choise>div:last-child p,
-.layout_choise .layout__content>div:nth-child(2) p,
-.layout_choise .layout__content>div:nth-child(3) p {
+.layout.layout_choise>div:last-child p,
+.layout.layout_choise .layout__content>div:nth-child(2) p,
+.layout.layout_choise .layout__content>div:nth-child(3) p {
     width: 40%;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 40px;
     color: #F3F6EF;
+}
+
+.layout.layout_choise .layout__content>div:nth-child(2) p {
+    font-size: 1.7rem;;
 }

@@ -9,7 +9,10 @@ export const Layout = (props) => {
             {props.main ? <h1>{props.title}</h1> : <h2>{props.title}</h2>}
             {props.description && <p>{props.description}</p>}
             {!props.main && <div className="layout__content"> {props.children} </div>}
-            <Button />
+            <Button 
+                text={"Попробовать бесплатно"} 
+                setIsModal={props.setIsModal}
+            />
             {props.class === "layout_choise" && <div>
                 <h2>Точно подойдет для:</h2>
                 {textContent

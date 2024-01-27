@@ -1,5 +1,5 @@
 import { TextBlock } from "../TextBlock/TextBlock";
-import textContent from '../../assets/data/text.json';
+import textContent from "../../assets/data/text.json";
 import attendingClasses from "../../assets/images/attendingClasses.svg";
 import creatingTraining from "../../assets/images/creatingTraining.svg";
 import forStudents from "../../assets/images/forStudents.svg";

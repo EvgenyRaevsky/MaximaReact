@@ -8,5 +8,26 @@
     border-radius: 40px;
     border: 3px solid #6BFFCA;
     background: linear-gradient(92deg, #6BFFCA 13.34%, #00FF47 129.97%);
+    opacity: .95;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(-100% - 27px * 2);
+    padding: 19px 27px;
+    width: 100%;
+    height: calc(1rem + 3px);
+    background: #6BFFCA;
+    transition: all .5s linear;
+    opacity: .9;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateX(100%);
 }
