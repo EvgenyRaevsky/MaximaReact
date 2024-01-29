@@ -32,6 +32,7 @@ function App() {
                 title="Возможности Ed Space"
                 main={false}
                 class="layout_card"
+                id="opportunities"
                 description="Поможем перенести корпоративную академию, базу знаний, учебные курсы, настроим систему мотивации обучения, круглосуточная поддержка."
                 setIsModal={setIsModal}
             >
@@ -41,6 +42,7 @@ function App() {
                 title="Выбирайте Ed Space сегодня и вы получите"
                 main={false}
                 class="layout_choise"
+                id="price"
                 setIsModal={setIsModal}
             >
                 <TextList />

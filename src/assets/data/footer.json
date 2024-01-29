@@ -1,14 +1,17 @@
 [
     {
         "name": "Меню:",
-        "list": ["Возможности", "Стоимость", "Выбор Ed Space"]
+        "list": ["Возможности", "Стоимость", "Выбор Ed Space"],
+        "links": ["#opportunities", "#price", "#price"]
     },
     {
         "name": "Документы:",
-        "list": ["Пользовательское соглашение", "Публичная оферта"]
+        "list": ["Пользовательское соглашение", "Публичная оферта"],
+        "links": ["https://ru.wikipedia.org/wiki/Пользовательское_соглашение", "https://ru.wikipedia.org/wiki/Оферта"]
     },
     {
         "name": "Контакты:",
-        "list": ["admin@site.com", "+7 (900) 123-45-67", "+7 (999) 876-54-32"]
+        "list": ["admin@site.com", "+7 (900) 123-45-67", "+7 (999) 876-54-32"],
+        "links": ["https://mail.yandex.ru", "#contacts", "#contacts"]
     }
 ]

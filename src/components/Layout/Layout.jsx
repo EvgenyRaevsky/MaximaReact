@@ -5,7 +5,7 @@ import "./Layout.css"
 
 export const Layout = (props) => {
     return (
-        <div className={`layout ${props.class}`} >
+        <div className={`layout ${props.class}`} id={props.id}>
             {props.main ? <h1>{props.title}</h1> : <h2>{props.title}</h2>}
             {props.description && <p>{props.description}</p>}
             {!props.main && <div className="layout__content"> {props.children} </div>}
