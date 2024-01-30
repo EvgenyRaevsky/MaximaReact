@@ -19,14 +19,20 @@ export const Modal = ({isModal, setIsModal}) => {
         setPhone("");
     }
 
-    const rText = /^[a-z ,.'-]+$/i
+    const rText = /^[a-zа-я,.'-]+$/i
     const rEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
     const rPhone = /^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/
     const toSendModal = () => { 
         if (nameUser.split(' ').length == 2 && rText.test(nameUser.split(' ')[0]) && rText.test(nameUser.split(' ')[1]) && nameOrganization && rText.test(office) && rEmail.test(email) && rPhone.test(phone)) {
             setIsModal(false);
             document.body.style.overflow = "visible";
-            console.log({nameUser, nameOrganization, office, email, phone});
+            console.log({
+                "Имя и Фамилия": nameUser,
+                "Название организации": nameOrganization,
+                "Должность": office,
+                "Email": email,
+                "Номер телефона": phone 
+        });
             setNameUser("");
             setNameOrganization("");
             setOffice("");
